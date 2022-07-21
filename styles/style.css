@@ -193,6 +193,8 @@ button.unclick-btn {
 
 .view-btn {
     display: none;
+    padding: 12px 20px;
+    font-size: 24px;
 }
 
 /* ===============Footer============== */
@@ -318,12 +320,13 @@ hr {
         grid-template-columns: repeat(1, 1fr);
         background-color: #000;
         border-radius: 20px;
+        width: 90%;
 
     }
 
     .main-head {
         text-align: center;
-        padding: 50px 100px;
+        padding: 20px 0px 0px 0px;
         font-size: 14px;
     }
 
@@ -334,11 +337,11 @@ hr {
 
 
     .ellipsis {
-        white-space: nowrap;
-        width: 315px;
         overflow: hidden;
         text-overflow: ellipsis;
-        text-align: center;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
 
     .banner-img {
@@ -356,6 +359,10 @@ hr {
     }
 
     /* -------Blog Section------- */
+    .match-container {
+        margin: 0px;
+    }
+
     .blog-container {
         margin-top: 25px
     }
@@ -519,15 +526,15 @@ hr {
     }
 
     .footer-option {
+        flex-flow: row wrap;
+        justify-content: center;
         width: 100%;
         margin-top: 0;
     }
 
-
-
-
-
-
+    .footer-option a {
+        margin: 0px 15px;
+    }
 
 
     /*================== Upcomming Page=============== */
@@ -539,7 +546,15 @@ hr {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .side-btn {
+    .match-container {
+        margin: 0px
+    }
+
+    /* .side-btn {
         justify-content: start;
+    } */
+
+    button.click-btn {
+        color: #fff;
     }
 }
