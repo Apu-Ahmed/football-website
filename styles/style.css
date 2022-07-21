@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;600;700&display=swap');
+
+
+/* --------------Common & Utility Styling-------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================================================
+=================== Banner Section Styling==================
+============================================================ */
+main {
+    background-color: #fff;
+}
+
+.banner-section,
+.blog-section,
+.matches-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #000;
+    width: 85%;
+    border-radius: 20px;
+}
+
+.main-head {
+    padding: 90px 100px;
+}
+
+.main-head h1 {
+    margin: 0;
+    color: transparent;
+    font-size: 55px;
+    line-height: 1.2;
+    background-image: linear-gradient(to left, #2ecc71, #3498db, #9b5936, #fff);
+    -webkit-background-clip: text;
+    animation: animate 6s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+
+}
+
+/* ==============Animation============= */
+@keyframes animate {
+    0% {
+        background-position: 0 100%;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+.main-head p {
+    color: #fff;
+}
+
+.main-head .hidden-text {
+    display: none;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.banner-img .show-img {
+    width: 90%;
+}
+
+.hidden-img {
+    display: none;
+}
+
+.button,
+.view-btn {
+    margin-top: 20px;
+    padding: 16px 30px;
+    background: #DD0000;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button.button i {
+    padding-left: 15px;
+}
+
+/* =========================================================
+=================== Blog Section Styling==================
+============================================================ */
+.blog-container {
+    width: 85%;
+    margin: 100px 0;
+}
+
+.blogs {
+    display: flex;
+}
+
+.side-btn {
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+    width: 312px;
+    height: 300px;
+    padding: 0 30px;
+    margin-right: 20px;
+    border-radius: 10px;
+
+
+
+}
+
+.side-btn button {
+    margin-top: 30px;
+    width: 252px;
+    height: 64px;
+    background: #DD0000;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button.unclick-btn {
+    color: #161616;
+    background: #fff;
+}
+
+.right-blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    flex-grow: 1;
+}
+
+.blog {
+    width: 100%;
+    border: 1px solid #1616160e;
+    border-radius: 10px;
+}
+
+.blog img {
+    width: 100%;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.blog-content {
+    padding: 15px 20px 20px 20px;
+}
+
+.blog button {
+    color: #161616;
+    background-color: #fff;
+    padding: 4px 16px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.blog-heading {
+    color: #161616;
+    font-size: 18px;
+}
+
+.blog-comments {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    color: #161616b0;
+}
+
+.view-btn {
+    display: none;
+}
+
+/* ===============Footer============== */
+footer {
+    background-color: #161616;
+}
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 300px;
+    width: 80%;
+}
+
+.footer-container h2 {
+    margin-bottom: 60px;
+    color: #fff;
+}
+
+hr {
+    color: #d8d4d4;
+    width: 100%;
+}
+
+.footer-option {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.footer-option a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icon {
+    padding: 20px 10px;
+}
+
+.social-icon a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 10px;
+}
+
+/* ==============Upcomming Matches Section============== */
+.match-container {
+    width: 85%;
+    margin: 100px 0;
+}
+
+.matches {
+    display: flex;
+}
+
+.match {
+    border: 1px solid #16161618;
+    border-radius: 10px;
+    padding: 35px 20px;
+}
+
+.match-schedule {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    flex-grow: 1;
+
+}
+
+.flags {
+    display: grid;
+    grid-template-columns: 40% auto 40%;
+    align-items: center;
+}
+
+.flag {
+    width: 100%;
+    text-align: center;
+}
+
+.flag img {
+    width: 100%;
+}
+
+.flag p {
+    font-weight: 600;
+    padding: 0px 10px;
+}
+
+.match-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.match-content h3 {
+    font-size: 20px;
+    color: #161616;
+}
+
+.match-content p {
+    color: #4D4D4D;
+    margin: 0;
+
+}
+
+
+/*===================== For Mobile Devices================ */
+@media screen and (max-width:576px) {
+
+    /*=========== Home Page============== */
+    /*=========== Banner Section======== */
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: #000;
+        border-radius: 20px;
+
+    }
+
+    .main-head {
+        text-align: center;
+        padding: 50px 100px;
+        font-size: 14px;
+    }
+
+    .main-head h1 {
+        font-size: 27px;
+    }
+
+
+
+    .ellipsis {
+        white-space: nowrap;
+        width: 315px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+    .banner-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .show-img {
+        display: none;
+    }
+
+    .hidden-img {
+        display: block;
+    }
+
+    /* -------Blog Section------- */
+    .blog-container {
+        margin-top: 25px
+    }
+
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-btn {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        width: 85%;
+        padding: 0px;
+        margin: 0 0 40px 0;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    .side-btn button {
+
+        border: 1px solid #161616;
+    }
+
+    .right-blog {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .view-btn {
+        display: none;
+    }
+
+    /* -------Footer Section------- */
+    .footer-container {
+        height: auto;
+    }
+
+    .footer-container h2 {
+        margin-bottom: 25px;
+    }
+
+    .footer-option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .footer-option a {
+        margin-bottom: 20px;
+    }
+
+    /*================== Upcomming Page=============== */
+    .matches {
+        flex-direction: column;
+    }
+
+    .match-schedule {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .side-btn {
+        width: 100%;
+    }
+}
+
+/*===================== For Tabled Devices================ */
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #000;
+        width: 85%;
+        border-radius: 20px;
+    }
+
+    .main-head {
+        padding: 100px 0px 100px 20px;
+    }
+
+    .main-head h1 {
+        font-size: 40px;
+    }
+
+    .main-head .visible-text {
+        display: none;
+    }
+
+    .main-head .hidden-text {
+        display: block;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .banner-img .show-img {
+        width: 100%;
+    }
+
+    /* -----------For Blog section--------- */
+    .blog-container {
+        margin: 0;
+    }
+
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .side-btn {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: transparent;
+        width: 85%;
+        height: 120px;
+        padding: 0;
+        border-radius: 10px;
+        align-content: space-between;
+        justify-content: space-evenly;
+    }
+
+    .side-btn button {
+        margin-left: 10px;
+        width: 200px;
+        height: 64px;
+        color: #161616;
+        border: 1px solid #161616;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .right-blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+    }
+
+    .view-btn {
+        display: block;
+        margin-top: 0px;
+
+    }
+
+    /* ============Footer Option=============== */
+    .footer-container {
+        margin-top: 50px;
+        height: 200px;
+    }
+
+    .footer-container h2 {
+        margin-bottom: 0;
+    }
+
+    .footer-option {
+        width: 100%;
+        margin-top: 0;
+    }
+
+
+
+
+
+
+
+
+    /*================== Upcomming Page=============== */
+    .matches {
+        flex-direction: column;
+    }
+
+    .match-schedule {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .side-btn {
+        justify-content: start;
+    }
+}
