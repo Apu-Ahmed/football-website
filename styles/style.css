@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;600;700&display=swap');
 
 
-/* --------------Common & Utility Styling-------------- */
+/* =========================================================
+===================Utility & Common class===================
+============================================================ */
 body {
     margin: 0;
     padding: 0;
@@ -43,13 +45,15 @@ main {
     line-height: 1.2;
     background-image: linear-gradient(to left, #2ecc71, #3498db, #9b5936, #fff);
     -webkit-background-clip: text;
-    animation: animate 6s linear infinite;
+    animation: animate 5s linear infinite;
     -webkit-background-size: 500%;
     background-size: 500%;
 
 }
 
-/* ==============Animation============= */
+/* =========================================================
+========================== Animation========================
+============================================================ */
 @keyframes animate {
     0% {
         background-position: 0 100%;
@@ -117,14 +121,10 @@ button.button i {
     display: flex;
     flex-direction: column;
     background-color: #161616;
-    width: 312px;
-    height: 300px;
+    height: 310px;
     padding: 0 30px;
     margin-right: 20px;
     border-radius: 10px;
-
-
-
 }
 
 .side-btn button {
@@ -161,6 +161,7 @@ button.unclick-btn {
 
 .blog img {
     width: 100%;
+    height: 200px;
     margin: 0px;
     border-radius: 10px;
 }
@@ -197,7 +198,9 @@ button.unclick-btn {
     font-size: 24px;
 }
 
-/* ===============Footer============== */
+/* =========================================================
+=================== Footer Section Styling==================
+============================================================ */
 footer {
     background-color: #161616;
 }
@@ -214,7 +217,7 @@ footer {
 }
 
 .footer-container h2 {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     color: #fff;
 }
 
@@ -246,7 +249,9 @@ hr {
     padding: 20px 10px;
 }
 
-/* ==============Upcomming Matches Section============== */
+/* =========================================================
+=================== Upcomming Page Styling==================
+============================================================ */
 .match-container {
     width: 85%;
     margin: 100px 0;
@@ -288,7 +293,6 @@ hr {
 
 .flag p {
     font-weight: 600;
-    padding: 0px 10px;
 }
 
 .match-content {
@@ -310,13 +314,15 @@ hr {
 }
 
 
-/*===================== For Mobile Devices================ */
+/* =========================================================
+========================Media Query=========================
+============================================================
+============================================================
+=================== Banner Section Styling==================
+============================================================ */
 @media screen and (max-width:576px) {
 
-    /*=========== Home Page============== */
-    /*=========== Banner Section======== */
     .container {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
         background-color: #000;
         border-radius: 20px;
@@ -333,8 +339,6 @@ hr {
     .main-head h1 {
         font-size: 27px;
     }
-
-
 
     .ellipsis {
         overflow: hidden;
@@ -358,7 +362,9 @@ hr {
         display: block;
     }
 
-    /* -------Blog Section------- */
+    /* =========================================================
+    =================== Blog Section Styling====================
+    ============================================================ */
     .match-container {
         margin: 0px;
     }
@@ -385,7 +391,6 @@ hr {
     }
 
     .side-btn button {
-
         border: 1px solid #161616;
     }
 
@@ -398,7 +403,9 @@ hr {
         display: none;
     }
 
-    /* -------Footer Section------- */
+    /* =========================================================
+    =================== Footer Section Styling==================
+    ============================================================ */
     .footer-container {
         height: auto;
     }
@@ -418,7 +425,12 @@ hr {
         margin-bottom: 20px;
     }
 
-    /*================== Upcomming Page=============== */
+    /* 
+    ============================================================
+    ============================================================
+    ====================== Upcomming Page=======================
+    ============================================================
+    ============================================================ */
     .matches {
         flex-direction: column;
     }
@@ -433,7 +445,9 @@ hr {
     }
 }
 
-/*===================== For Tabled Devices================ */
+/* =========================================================
+=======================Tablet Devices=======================
+============================================================ */
 @media screen and (min-width:577px) and (max-width:992px) {
 
     .container {
@@ -468,7 +482,9 @@ hr {
         width: 100%;
     }
 
-    /* -----------For Blog section--------- */
+    /* =========================================================
+    ======================== Blog Section=======================
+    ============================================================ */
     .blog-container {
         margin: 0;
     }
@@ -484,12 +500,10 @@ hr {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         background-color: transparent;
-        width: 85%;
         height: 120px;
         padding: 0;
+        margin-right: 0px;
         border-radius: 10px;
-        align-content: space-between;
-        justify-content: space-evenly;
     }
 
     .side-btn button {
@@ -515,7 +529,9 @@ hr {
 
     }
 
-    /* ============Footer Option=============== */
+    /* =========================================================
+    =================== Footer Section Styling==================
+    ============================================================ */
     .footer-container {
         margin-top: 50px;
         height: 200px;
@@ -537,7 +553,12 @@ hr {
     }
 
 
-    /*================== Upcomming Page=============== */
+    /* 
+    ============================================================
+    ============================================================
+    ====================== Upcomming Page=======================
+    ============================================================
+    ============================================================ */
     .matches {
         flex-direction: column;
     }
@@ -549,10 +570,6 @@ hr {
     .match-container {
         margin: 0px
     }
-
-    /* .side-btn {
-        justify-content: start;
-    } */
 
     button.click-btn {
         color: #fff;
